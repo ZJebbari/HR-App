@@ -1,0 +1,12 @@
+.backgroundCRUD{
+    -fx-background-radius: 20;
+    -fx-opacity: 0.7;
+}
+.addEmployeeButton{
+    -fx-background-radius: 30;
+}
+.addEmployeeButton:hover{
+    -fx-background-color:#3e243a ;
+    -fx-text-fill: white;
+    -fx-radius: 20;
+}

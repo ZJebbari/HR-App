@@ -1,0 +1,26 @@
+/* Login page */
+.root{
+    -fx-background-image: url('../AdminstratorImages/Background.jpg');
+    -fx-background-size: cover;
+}
+.loginButton{
+    -fx-background-radius: 30;
+}
+.loginButton:hover{
+    -fx-background-color: #3e243a;
+    -fx-text-fill: white;
+}
+
+/* Admin page */
+.adminButton{
+    -fx-background-color: transparent;
+    -fx-background-radius: 10;
+}
+.adminButton:hover{
+    -fx-background-color: rgb(152,126,115);
+    -fx-text-fill:#fff;
+}
+.StackAdmin{
+    -fx-opacity: 0.7;
+    -fx-background-radius: 10;
+}

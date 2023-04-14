@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" stylesheets="@../AdminstratorCssStyle/LoginCss.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jbc.javaproject.AdminstratorClass.SignUpAdminController">
+   <children>
+      <AnchorPane fx:id="signUpParent" layoutX="98.0" layoutY="52.0" prefHeight="395.0" prefWidth="602.0" style="-fx-background-color: #ffdfb3;" styleClass="StackAdmin" stylesheets="@../AdminstratorCssStyle/CrudStyle.css">
+         <children>
+            <JFXTextField fx:id="codeSignUp" focusColor="#2b1227" layoutX="10.0" layoutY="160.0" prefHeight="26.0" prefWidth="170.0" promptText="Choose Code" />
+            <JFXPasswordField fx:id="firstPasswordSignUp" focusColor="#2b1227" layoutX="9.0" layoutY="206.0" prefHeight="26.0" prefWidth="170.0" promptText="Choose Password" />
+            <JFXTextField fx:id="firstNameSignUp" focusColor="#2b1227" layoutX="10.0" layoutY="62.0" prefHeight="26.0" prefWidth="169.0" promptText="First Name" AnchorPane.topAnchor="62.0" />
+            <JFXTextField fx:id="lastNameSignUp" focusColor="#2b1227" layoutX="10.0" layoutY="111.0" prefHeight="26.0" prefWidth="169.0" promptText="Last Name" />
+            <JFXButton fx:id="signUpBtnSignUP" layoutX="265.0" layoutY="347.0" styleClass="loginButton" stylesheets="@../AdminstratorCssStyle/LoginCss.css" text="Sign Up" textFill="#3e243a">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></JFXButton>
+            <Label layoutX="206.0" layoutY="14.0" text="Adminstrator Sign Up " textFill="#2b1227">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="backToLoginBtnSignUp" layoutX="488.0" layoutY="347.0" styleClass="loginButton" stylesheets="@../AdminstratorCssStyle/LoginCss.css" text="Back To Login" textFill="#3e243a">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></JFXButton>
+            <JFXComboBox fx:id="titlesSignUp" focusColor="#3e243a" layoutX="9.0" layoutY="293.0" prefHeight="26.0" prefWidth="170.0" promptText="Choose Type" style="-fx-background-color: #ffdfb3;" AnchorPane.topAnchor="293.0" />
+            <JFXTextField fx:id="imageFileSignUp" focusColor="#2b1227" layoutX="9.0" layoutY="335.0" prefHeight="26.0" prefWidth="170.0" promptText="Image File Path" visible="false" />
+            <DatePicker fx:id="dateSignUp" layoutX="215.0" layoutY="98.0" prefHeight="26.0" prefWidth="170.0" promptText="Hiring Date" />
+            <JFXTextField fx:id="jobTitleSignUp" focusColor="#2b1227" layoutX="215.0" layoutY="147.0" prefHeight="26.0" prefWidth="170.0" promptText="Job Title" />
+            <ImageView fx:id="uploadButtonImage" accessibleRole="BUTTON" fitHeight="123.0" fitWidth="139.0" layoutX="465.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../AdminstratorImages/addImage.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="superVisorCodeSignUp" focusColor="#2b1227" layoutX="216.0" layoutY="193.0" prefHeight="26.0" prefWidth="170.0" promptText="SuperVisor Code" />
+            <JFXTextField fx:id="phoneNumberSignUp" focusColor="#2b1227" layoutX="216.0" layoutY="238.0" prefHeight="26.0" prefWidth="170.0" promptText="Phone Number" />
+            <JFXPasswordField fx:id="secondPasswordSignUp" focusColor="#2b1227" layoutX="9.0" layoutY="251.0" prefHeight="26.0" prefWidth="170.0" promptText="Confirm Password" />
+            <JFXTextField fx:id="addressSignUp" focusColor="#2b1227" layoutX="215.0" layoutY="280.0" prefHeight="26.0" prefWidth="170.0" promptText="Address" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

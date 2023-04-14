@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="395.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jbc.javaproject.AdminstratorClass.AddEmployeeController">
+    <children>
+        <AnchorPane fx:id="addEmployeeHiringDate" layoutX="6.0" prefHeight="395.0" prefWidth="508.0" style="-fx-background-color: #ffdfb3;" styleClass="backgroundCRUD" stylesheets="@../AdminstratorCssStyle/CrudStyle.css">
+            <children>
+                <Label layoutX="242.0" layoutY="74.0" prefHeight="20.0" prefWidth="76.0" text="First Name" textFill="#3e243a" AnchorPane.leftAnchor="242.0" AnchorPane.rightAnchor="190.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+                <Label layoutX="242.0" layoutY="134.0" prefHeight="20.0" prefWidth="76.0" text="Last Name" textFill="#3e243a" AnchorPane.leftAnchor="242.0" AnchorPane.rightAnchor="190.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+                <Label layoutX="253.0" layoutY="236.0" text="Job Title:" textFill="#3e243a" AnchorPane.leftAnchor="245.6" AnchorPane.rightAnchor="194.2">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+                <Label layoutX="246.0" layoutY="298.0" text="Supervisor's Code" textFill="#3e243a" AnchorPane.leftAnchor="246.0" AnchorPane.rightAnchor="143.20000000000005">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <JFXTextField fx:id="addEmployeeFirstName" accessibleRole="PASSWORD_FIELD" focusColor="#3e243a" layoutX="246.0" layoutY="94.0" prefHeight="26.0" prefWidth="202.0" promptText="First Name" />
+            <JFXTextField fx:id="addEmployeeLastName" focusColor="#3e243a" layoutX="244.0" layoutY="154.0" prefHeight="26.0" prefWidth="210.0" promptText="Last Name" AnchorPane.rightAnchor="53.60000000000002" />
+            <DatePicker fx:id="addEmployeeDate" layoutX="37.0" layoutY="318.0" prefHeight="26.0" prefWidth="178.0" promptText="Hiring Date" style="-fx-background-color: #ffdfb3;" AnchorPane.rightAnchor="292.6" />
+            <JFXComboBox fx:id="addEmployeeType" focusColor="#3e243a" layoutX="246.0" layoutY="206.0" prefHeight="26.0" prefWidth="202.0" promptText="Choose Type" />
+            <JFXTextField fx:id="addEmployeeTitle" focusColor="#3e243a" layoutX="244.0" layoutY="256.0" prefHeight="26.0" prefWidth="210.0" promptText="Title" />
+            <JFXTextField fx:id="addEmployeeSupervisor" focusColor="#3e243a" layoutX="245.0" layoutY="315.0" prefHeight="26.0" prefWidth="209.0" promptText="SP.Code" />
+            <ImageView fx:id="addEmployeePic" accessibleRole="BUTTON" fitHeight="112.0" fitWidth="119.0" layoutX="7.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../AdminstratorImages/addImage.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="addEmployeeCode" focusColor="#3e243a" layoutX="33.0" layoutY="131.0" prefHeight="26.0" prefWidth="178.0" promptText="Code" />
+            <JFXPasswordField fx:id="addEmployeePassword" focusColor="#3e243a" layoutX="33.0" layoutY="178.0" prefHeight="26.0" prefWidth="178.0" promptText="Password" />
+            <JFXTextField fx:id="addEmployeePhone" focusColor="#3e243a" layoutX="35.0" layoutY="227.0" prefHeight="26.0" prefWidth="178.0" promptText="Phone Number" />
+            <JFXTextField fx:id="addEmployeeAdress" focusColor="#3e243a" layoutX="37.0" layoutY="276.0" prefHeight="26.0" prefWidth="178.0" promptText="Address" />
+            <JFXTextField fx:id="addEmployeePicPath" focusColor="#3e243a" layoutX="157.0" layoutY="355.0" prefHeight="26.0" prefWidth="178.0" promptText="Image File Path" visible="false" />
+            <JFXButton fx:id="addEmployeeBtn" layoutX="402.0" layoutY="355.0" prefHeight="26.0" prefWidth="61.0" styleClass="addEmployeeButton" stylesheets="@../AdminstratorCssStyle/CrudStyle.css" text="Add" textFill="#3e243a">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="46.0" fitWidth="46.0" layoutX="457.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../AdminstratorImages/Pen.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="46.0" fitWidth="61.0" layoutX="454.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../AdminstratorImages/Pen.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="46.0" fitWidth="53.0" layoutX="454.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../AdminstratorImages/Pen.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="46.0" fitWidth="61.0" layoutX="457.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../AdminstratorImages/Pen.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="47.0" fitWidth="46.0" layoutX="-9.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="-9.0">
+               <image>
+                  <Image url="@../AdminstratorImages/NameID.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="46.0" layoutX="-5.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="-9.0">
+               <image>
+                  <Image url="@../AdminstratorImages/Phone.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="-5.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="-9.0">
+               <image>
+                  <Image url="@../AdminstratorImages/Address.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="-5.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="-9.0">
+               <image>
+                  <Image url="@../AdminstratorImages/Key.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="244.0" layoutY="188.0" text="Type:" textFill="#3e243a">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="-5.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../AdminstratorImages/Date.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="193.0" layoutY="14.0" prefHeight="27.0" prefWidth="138.0" text="Add Employee" textFill="#3e243a">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
